@@ -103,3 +103,27 @@ html.js,
 	-webkit-transform: scale3d(0, 1, 1);
 	transform: scale3d(0, 1, 1);
 }
+
+.link--page:hover:before {
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+}
+
+.link--faded {
+	color: #4f4f64;
+}
+
+.link--faded:hover,
+.link--faded:focus {
+	color: #5c5edc;
+}
+
+.link--page.link--faded {
+	font-size: 0.65em;
+}
+
+.link--social {
+	font-size: 1.5em;
+	margin: 0 0.75em;
+}
+
