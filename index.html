@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js" manifest="demo.appcache">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -11,97 +12,103 @@
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <script src="js/modernizr-custom.js"></script>
 </head>
+
 <body>
-<nav class="navi">
-	<div class="navi__item"><a class="link link--page" href="#page-Home">Home</a></div>
-	<div class="navi__item"><a class="link link--page" href="#page-Fixtures">Fixtures and Results</a></div>
-	<div class="navi__item"><a class="link link--page" href="#page-Results">Tables</a></div>
-	<div class="navi__item"><a class="link link--page" href="#page-Tables">Player Stats</a></div>
-	<div class="navi__item"><a class="link link--page" href="#page-PlayerStats">Awards and Photos</a></div>
-	<div class="navi__item"><a class="link link--page" href="#page-Awards">Transfers</a></div>
-	<div class="navi__item"><a class="link link--page" href="#page-MyClub">My Club</a></div>
-	<div class="navi__item navi__item--social">
-		<a class="link link--social link--faded" href="#"><i class="fa fa-twitter"></i><span class="text-hidden">Twitter</span></a>
-		<a class="link link--social link--faded" href="#"><i class="fa fa-instagram"></i><span class="text-hidden">Instagram</span></a>
-		<a class="link link--social link--faded" href="#"><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
-	</div>
-</nav>
+    <nav class="navi">
+        <div class="navi__item"><a class="link link--page" href="#page-Home">Home</a></div>
+        <div class="navi__item"><a class="link link--page" href="#page-Fixtures">Fixtures and Results</a></div>
+        <div class="navi__item"><a class="link link--page" href="#page-Results">Tables</a></div>
+        <div class="navi__item"><a class="link link--page" href="#page-Tables">Player Stats</a></div>
+        <div class="navi__item"><a class="link link--page" href="#page-PlayerStats">Awards and Photos</a></div>
+        <div class="navi__item"><a class="link link--page" href="#page-Awards">Transfers</a></div>
+        <div class="navi__item"><a class="link link--page" href="#page-MyClub">My Club</a></div>
+        <div class="navi__item navi__item--social">
+            <a class="link link--social link--faded" href="#"><i class="fa fa-twitter"></i><span class="text-hidden">Twitter</span></a>
+            <a class="link link--social link--faded" href="#"><i class="fa fa-instagram"></i><span class="text-hidden">Instagram</span></a>
+            <a class="link link--social link--faded" href="#"><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
+        </div>
+    </nav>
 
-<div class="pages-stack">
-	<div class="page" id="page-Home">
+    <div class="pages-stack">
+        <div class="page" id="page-Home">
 
-        <header class="bp-header cf">
-				<h1 class="bp-header__title">Premier League Sim</h1>
-				<h2 class="capSlides">McLaren</h2>
-				<h2 class="capSlides">PierLights</h2>
-				<h2 class="capSlides">Winter</h2>
-				<h2 class="capSlides">Ocean</h2>
-				<div class="poster">
+            <header class="bp-header cf">
+                <h1 class="bp-header__title">Premier League Sim</h1>
+                <h2 class="capSlides">McLaren</h2>
+                <h2 class="capSlides">PierLights</h2>
+                <h2 class="capSlides">Winter</h2>
+                <h2 class="capSlides">Ocean</h2>
+                <div class="poster">
 
-                <img class="mySlides" src="images/mclaren-f12.jpg">
-                <img class="mySlides" src="images/pierlights800x600.jpg">
-                <img class="mySlides" src="images/wallpaper-800x600-2.jpg">
-                <img class="mySlides" src="images/Wallpaper_CollectorsEdition800x600.jpg">
+                    <img class="mySlides" src="images/mclaren-f12.jpg">
+                    <img class="mySlides" src="images/pierlights800x600.jpg">
+                    <img class="mySlides" src="images/wallpaper-800x600-2.jpg">
+                    <img class="mySlides" src="images/Wallpaper_CollectorsEdition800x600.jpg">
 
-				</div>
-        </header>
-	</div>
-	<div class="page" id="page-FixturesandResults">
-	    <!-- page content -->
-	</div>
-	<div class="page" id="page-Tables">
-		<!-- page content -->
-	</div>
-	<div class="page" id="page-PlayerStats">
-		<!-- page content -->
-	</div>
-	<div class="page" id="page-AwardsandPhotos">
-		<!-- page content -->
-	</div>
-	<div class="page" id="page-Transfers">
-		<!-- page content -->
-	</div>
+                </div>
+            </header>
+        </div>
+        <div class="page" id="page-FixturesandResults">
+            <!-- page content -->
+        </div>
+        <div class="page" id="page-Tables">
+            <!-- page content -->
+        </div>
+        <div class="page" id="page-PlayerStats">
+            <!-- page content -->
+        </div>
+        <div class="page" id="page-AwardsandPhotos">
+            <!-- page content -->
+        </div>
+        <div class="page" id="page-Transfers">
+            <!-- page content -->
+        </div>
     </div>
 
-<script>
-var slideIndex = 0;
-carousel();
+    <script>
+        var slideIndex = 0;
+        carousel();
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > x.length) {slideIndex = 1}
-    x[slideIndex-1].style.display = "block";
-    setTimeout(carousel, 5000);
-}
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {
+                slideIndex = 1
+            }
+            x[slideIndex - 1].style.display = "block";
+            setTimeout(carousel, 5000);
+        }
     </script>
 
     <script>
-var slidecap = 0;
-caro();
+        var slidecap = 0;
+        caro();
 
-function caro() {
-    var i;
-    var x = document.getElementsByClassName("capSlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    slidecap++;
-    if (slidecap > x.length) {slidecap = 1}
-    x[slidecap-1].style.display = "block";
-    setTimeout(caro, 5000);
-}
-</script>
+        function caro() {
+            var i;
+            var x = document.getElementsByClassName("capSlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slidecap++;
+            if (slidecap > x.length) {
+                slidecap = 1
+            }
+            x[slidecap - 1].style.display = "block";
+            setTimeout(caro, 5000);
+        }
+    </script>
 
 
 
-<button class="menu-button"><span>Menu</span></button>
-<script src="js/classie.js"></script>
-<script src="js/main.js"></script>
+    <button class="menu-button"><span>Menu</span></button>
+    <script src="js/classie.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
+
 </html>
