@@ -52,3 +52,13 @@ html.js,
 	padding: 0 10%;
 }
 
+.navi .navi__item--social {
+	width: 100%;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 1.2s, opacity 1.2s;
+	transition: transform 1.2s, opacity 1.2s;
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	-webkit-transform: translate3d(0, 20px, 0);
+	transform: translate3d(0, 20px, 0);
+}
