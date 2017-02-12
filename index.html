@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en" class="no-js" manifest="demo.appcache">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -14,11 +14,12 @@
 <body>
 <nav class="navi">
 	<div class="navi__item"><a class="link link--page" href="#page-Home">Home</a></div>
-	<div class="navi__item"><a class="link link--page" href="#page-Fixtures">Fixtures</a></div>
-	<div class="navi__item"><a class="link link--page" href="#page-Results">Results</a></div>
-	<div class="navi__item"><a class="link link--page" href="#page-Tables">Tables</a></div>
-	<div class="navi__item"><a class="link link--page" href="#page-PlayerStats">Player Stats</a></div>
-	<div class="navi__item"><a class="link link--page" href="#page-Awards">Awards</a></div>
+	<div class="navi__item"><a class="link link--page" href="#page-Fixtures">Fixtures and Results</a></div>
+	<div class="navi__item"><a class="link link--page" href="#page-Results">Tables</a></div>
+	<div class="navi__item"><a class="link link--page" href="#page-Tables">Player Stats</a></div>
+	<div class="navi__item"><a class="link link--page" href="#page-PlayerStats">Awards and Photos</a></div>
+	<div class="navi__item"><a class="link link--page" href="#page-Awards">Transfers</a></div>
+	<div class="navi__item"><a class="link link--page" href="#page-MyClub">My Club</a></div>
 	<div class="navi__item navi__item--social">
 		<a class="link link--social link--faded" href="#"><i class="fa fa-twitter"></i><span class="text-hidden">Twitter</span></a>
 		<a class="link link--social link--faded" href="#"><i class="fa fa-instagram"></i><span class="text-hidden">Instagram</span></a>
@@ -28,13 +29,21 @@
 
 <div class="pages-stack">
 	<div class="page" id="page-Home">
-        <!-- page content -->
+
+        <header class="bp-header cf">
+				<h1 class="bp-header__title">Premier League Sim</h1>
+				<div class="poster">
+
+				<img class="mySlides" src="images/mclaren-f12.jpg">
+                <img class="mySlides" src="images/pierlights800x600.jpg">
+                <img class="mySlides" src="images/wallpaper-800x600-2.jpg">
+                <img class="mySlides" src="images/Wallpaper_CollectorsEdition800x600.jpg">
+
+				</div>
+        </header>
 	</div>
-	<div class="page" id="page-Fixtures">
+	<div class="page" id="page-FixturesandResults">
 	    <!-- page content -->
-	</div>
-	<div class="page" id="page-Results">
-		<!-- page content -->
 	</div>
 	<div class="page" id="page-Tables">
 		<!-- page content -->
@@ -42,10 +51,30 @@
 	<div class="page" id="page-PlayerStats">
 		<!-- page content -->
 	</div>
-	<div class="page" id="page-Awards">
+	<div class="page" id="page-AwardsandPhotos">
+		<!-- page content -->
+	</div>
+	<div class="page" id="page-Transfers">
 		<!-- page content -->
 	</div>
 </div>
+    <script>
+        var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 10000); // Change image every 10 seconds
+}
+    </script>
+
 <button class="menu-button"><span>Menu</span></button>
 <script src="js/classie.js"></script>
 <script src="js/main.js"></script>
