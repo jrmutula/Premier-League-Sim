@@ -35,3 +35,20 @@ html.js,
 	-webkit-transform: translate3d(0, 150px, 0);
 	transform: translate3d(0, 150px, 0);
 }
+
+.js .navi--open {
+	pointer-events: auto;
+	opacity: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.navi__item {
+	width: 33%;
+	padding: 1em;
+}
+
+.js .navi__item {
+	padding: 0 10%;
+}
+
