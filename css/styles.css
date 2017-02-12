@@ -265,3 +265,28 @@ html.js,
 		margin: 0 0.1em;
 	}
 }
+
+@media screen and (max-width: 40em) {
+	.js .navi {
+		display: block;
+		padding: 10px 20px 0 20px;
+		text-align: left;
+	}
+	.js .navi__item {
+		width: 100%;
+		padding: 4px 0;
+	}
+	.js .navi__item--small {
+		display: inline-block;
+		width: auto;
+		margin-right: 5px;
+	}
+	.navi__item--social {
+		font-size: 0.9em;
+	}
+	.menu-button {
+		top: 15px;
+		right: 10px;
+		left: auto;
+	}
+}
