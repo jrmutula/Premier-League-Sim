@@ -248,3 +248,20 @@ html.js,
 	-webkit-transform: rotate3d(0, 0, 1, -45deg);
 	transform: rotate3d(0, 0, 1, -45deg);
 }
+
+/*Making it responsive*/
+
+@media screen and (max-width: 60em) {
+	.navi__item {
+		width: 50%;
+		min-height: 20px;
+	}
+	.link--page {
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	.link--social {
+		margin: 0 0.1em;
+	}
+}
