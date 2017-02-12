@@ -42,7 +42,7 @@
 		// menu button
 		menuCtrl = document.querySelector('button.menu-button'),
 		// the navigation wrapper
-		nav = document.querySelector('.pages-nav'),
+		nav = document.querySelector('.navi'),
 		// the menu nav items
 		navItems = [].slice.call(nav.querySelectorAll('.link--page')),
 		// check if menu is open
@@ -144,7 +144,7 @@
 		// stack gets the class "pages-stack--open" to add the transitions
 		classie.add(stack, 'pages-stack--open');
 		// reveal the menu
-		classie.add(nav, 'pages-nav--open');
+		classie.add(nav, 'navi--open');
 
 		// now set the page transforms
 		var stackPagesIdxs = getStackPagesIdxs();
@@ -186,7 +186,7 @@
 
 		// close menu..
 		classie.remove(menuCtrl, 'menu-button--open');
-		classie.remove(nav, 'pages-nav--open');
+		classie.remove(nav, 'navi--open');
 		onEndTransition(futurePage, function() {
 			classie.remove(stack, 'pages-stack--open');
 			// reorganize stack
