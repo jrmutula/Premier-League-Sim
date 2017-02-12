@@ -260,8 +260,10 @@ a:hover {
 	height: 2px;
 	pointer-events: none;
 	-webkit-transition: -webkit-transform 0.25s;
+    -moz-transition: -moz-transform 0.25s;
 	transition: transform 0.25s;
 	-webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
 	transform-origin: 50% 50%;
 }
 
@@ -273,16 +275,19 @@ a:hover {
 	height: 2px;
 	text-indent: 200%;
 	-webkit-transition: opacity 0.25s;
+    -moz-transition: opacity 0.25s;
 	transition: opacity 0.25s;
 }
 
 .menu-button::before {
 	-webkit-transform: translate3d(0, -10px, 0) scale3d(0.8, 1, 1);
+    -moz-transform: translate3d(0, -10px, 0) scale3d(0.8, 1, 1);
 	transform: translate3d(0, -10px, 0) scale3d(0.8, 1, 1);
 }
 
 .menu-button::after {
 	-webkit-transform: translate3d(0, 10px, 0) scale3d(0.8, 1, 1);
+    -moz-transform: translate3d(0, 10px, 0) scale3d(0.8, 1, 1);
 	transform: translate3d(0, 10px, 0) scale3d(0.8, 1, 1);
 }
 
@@ -292,11 +297,13 @@ a:hover {
 
 .menu-button--open::before {
 	-webkit-transform: rotate3d(0, 0, 1, 45deg);
+    -moz-transform: rotate3d(0, 0, 1, 45deg);
 	transform: rotate3d(0, 0, 1, 45deg);
 }
 
 .menu-button--open::after {
 	-webkit-transform: rotate3d(0, 0, 1, -45deg);
+    -moz-transform: rotate3d(0, 0, 1, -45deg);
 	transform: rotate3d(0, 0, 1, -45deg);
 }
 
