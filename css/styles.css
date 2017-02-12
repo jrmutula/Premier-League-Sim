@@ -127,3 +127,12 @@ html.js,
 	margin: 0 0.75em;
 }
 
+.text-hidden {
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	color: transparent;
+}
+
