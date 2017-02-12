@@ -33,6 +33,27 @@ a:hover {
 	color: #fff;
 }
 
+/* Resets */
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+
+/* Helper classes */
+
+.cf:before,
+.cf:after {
+	content: ' ';
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
 /*navigation*/
 .navi {
 	display: -webkit-flex;
