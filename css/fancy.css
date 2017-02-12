@@ -7,12 +7,16 @@ html.js,
 /*navigation*/
 .navi {
 	display: -webkit-flex;
+    display: -moz-flex;
 	display: flex;
 	-webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
 	flex-wrap: wrap;
 	-webkit-justify-content: center;
+    -moz-justify-content: center;
 	justify-content: center;
 	-webkit-align-items: center;
+    -moz-align-items: center;
 	align-items: center;
 	padding: 20px;
 	text-align: center;
@@ -30,10 +34,13 @@ html.js,
 	opacity: 0;
 	background: transparent;
 	-webkit-transition: -webkit-transform 1.2s, opacity 1.2s;
+    -moz-transition: -moz-transform 1.2s, opacity 1.2s;
 	transition: transform 1.2s, opacity 1.2s;
 	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    -moz-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 	-webkit-transform: translate3d(0, 150px, 0);
+    -moz-transform: translate3d(0, 150px, 0);
 	transform: translate3d(0, 150px, 0);
 }
 
@@ -41,6 +48,7 @@ html.js,
 	pointer-events: auto;
 	opacity: 1;
 	-webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
 }
 
@@ -57,18 +65,23 @@ html.js,
 	width: 100%;
 	opacity: 0;
 	-webkit-transition: -webkit-transform 1.2s, opacity 1.2s;
+    -moz-transition: -moz-transform 1.2s, opacity 1.2s;
 	transition: transform 1.2s, opacity 1.2s;
 	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    -moz-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 	-webkit-transform: translate3d(0, 20px, 0);
+    -moz-transform: translate3d(0, 20px, 0);
 	transform: translate3d(0, 20px, 0);
 }
 
 .navi--open .navi__item--social {
 	opacity: 1;
 	-webkit-transition-delay: 0.35s;
+    -moz-transition-delay: 0.35s;
 	transition-delay: 0.35s;
 	-webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
 }
 
@@ -100,13 +113,16 @@ html.js,
 	margin: 5px 0 0 -15px;
 	background: #fff;
 	-webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
 	transition: transform 0.3s;
 	-webkit-transform: scale3d(0, 1, 1);
+    -moz-transform: scale3d(0, 1, 1);
 	transform: scale3d(0, 1, 1);
 }
 
 .link--page:hover:before {
 	-webkit-transform: scale3d(1, 1, 1);
+    -moz-transform: scale3d(1, 1, 1);
 	transform: scale3d(1, 1, 1);
 }
 
@@ -143,8 +159,10 @@ html.js,
 	z-index: 100;
 	pointer-events: none;
 	-webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
 	perspective: 1200px;
 	-webkit-perspective-origin: 50% -50%;
+    -moz-perspective-origin: 50% -50%;
 	perspective-origin: 50% -50%;
 }
 
@@ -162,8 +180,10 @@ html.js,
 .js .pages-stack--open .page {
 	cursor: pointer;
 	-webkit-transition: -webkit-transform 0.45s, opacity 0.45s;
+    -moz-transition: -moz-transform 0.45s, opacity 0.45s;
 	transition: transform 0.45s, opacity 0.45s;
 	-webkit-transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
+    -moz-transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
 	transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
 }
 
