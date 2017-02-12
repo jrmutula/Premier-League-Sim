@@ -69,6 +69,7 @@ a:hover {
     max-height: 100%;
     max-width: 30%;
     float: left;
+    padding-left: 5%;
 }
 
 .poster {
