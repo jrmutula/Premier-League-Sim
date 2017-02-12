@@ -32,9 +32,13 @@
 
         <header class="bp-header cf">
 				<h1 class="bp-header__title">Premier League Sim</h1>
+				<h2 class="capSlides">McLaren</h2>
+				<h2 class="capSlides">PierLights</h2>
+				<h2 class="capSlides">Winter</h2>
+				<h2 class="capSlides">Ocean</h2>
 				<div class="poster">
 
-				<img class="mySlides" src="images/mclaren-f12.jpg">
+                <img class="mySlides" src="images/mclaren-f12.jpg">
                 <img class="mySlides" src="images/pierlights800x600.jpg">
                 <img class="mySlides" src="images/wallpaper-800x600-2.jpg">
                 <img class="mySlides" src="images/Wallpaper_CollectorsEdition800x600.jpg">
@@ -57,9 +61,10 @@
 	<div class="page" id="page-Transfers">
 		<!-- page content -->
 	</div>
-</div>
-    <script>
-        var slideIndex = 0;
+    </div>
+
+<script>
+var slideIndex = 0;
 carousel();
 
 function carousel() {
@@ -71,9 +76,28 @@ function carousel() {
     slideIndex++;
     if (slideIndex > x.length) {slideIndex = 1}
     x[slideIndex-1].style.display = "block";
-    setTimeout(carousel, 10000); // Change image every 10 seconds
+    setTimeout(carousel, 5000);
 }
     </script>
+
+    <script>
+var slidecap = 0;
+caro();
+
+function caro() {
+    var i;
+    var x = document.getElementsByClassName("capSlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slidecap++;
+    if (slidecap > x.length) {slidecap = 1}
+    x[slidecap-1].style.display = "block";
+    setTimeout(caro, 5000);
+}
+</script>
+
+
 
 <button class="menu-button"><span>Menu</span></button>
 <script src="js/classie.js"></script>
