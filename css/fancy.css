@@ -323,33 +323,30 @@ html.js,
     }
     .bp-header {
         max-width: 100%;
-        padding-left: 5%;
     }
 
     .bp-header__title {
 	font-size: 180%;
-	font-weight: 700;
-	line-height: 1.3;
-    text-align: center;
-	letter-spacing: 2px;
-	text-transform: none;
-	color: #00ffff;
-    max-width: 90%;
-    float: left;
+        padding-right: 5%;
 }
 
     .exp{
     max-height: 100%;
     max-width: 100%;
-    float: left;
-    padding-left: 3%;
+        width: 90%;
     font-size: 75%;
+        padding-left: 3%;
+        padding-right: 3%;
+        text-align: center;
+        position: relative;
 }
 
     .poster {
         max-height: 100%;
         max-width: 100%;
         text-align: center;
+        position: static;
+        padding-top: 15%;
     }
     .poster img {
         height: 200px;
@@ -360,11 +357,17 @@ html.js,
     }
     .capSlides {
         max-height: 100%;
-        max-width: 100%;
+        width: 100%;
         font-size: 75%;
+        width: 90%;
+padding-left: 3%;
+        padding-right: 3%;
+        text-align: center;
+        position: relative;
     }
     .mfoot {
         max-width: 100%;
-        margin-top: 100%;
+        margin-bottom: auto;
+        position: relative;
     }
 }
