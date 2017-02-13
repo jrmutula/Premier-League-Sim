@@ -32,7 +32,6 @@
 
 body {
 	font-family: 'Avenir Next', Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
-	margin: 0 auto;
     color: #cecece;
 	background: #000;
     -webkit-font-smoothing: antialiased;
@@ -56,20 +55,27 @@ a:hover {
 }
 
 .bp-header__title {
-	font-size: 300%;
+	font-size: 350%;
 	font-weight: 700;
 	line-height: 1.3;
     text-align: center;
 	letter-spacing: 2px;
 	text-transform: none;
 	color: #00ffff;
-    max-width: 90%;
-    float: right;
+    background-color: #4B0082;
+    width: 100%;
+    position: fixed;
+    padding-top: 2%;
+    margin: 0 auto;
+    padding-bottom: 1%;
+
 }
 
 .mfoot{
     max-width: 100%;
     margin-top: 80%;
+    background-color: #4B0082;
+    position: fixed;
 }
 
 .lef{
@@ -88,22 +94,34 @@ a:hover {
     max-height: 100%;
     max-width: 40%;
     float: left;
-    padding-left: 5%;
+    margin-left: 5%;
+    margin-top: 15%;
+    padding-right: 2%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    background-color: #4B0082;
+
 }
 
 .exp{
     max-height: 100%;
     max-width: 40%;
     float: left;
-    padding-left: 3%;
+    margin-left: 5%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+    margin-top: 15%;
+    background-color: #4B0082;
 }
 
 .poster {
     max-height: 100%;
     max-width: 60%;
+    margin-top: 15%;
     float: right;
-    padding-right: 10%;
+    padding-right: 5%;
     text-align: center;
+    border: 2px;
 }
 
 .poster img{
