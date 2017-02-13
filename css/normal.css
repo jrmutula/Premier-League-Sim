@@ -63,6 +63,8 @@ a:hover {
 	letter-spacing: 2px;
 	text-transform: none;
 	color: #00ffff;
+    max-width: 90%;
+    float: right;
 }
 
 .mfoot{

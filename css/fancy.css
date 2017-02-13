@@ -325,6 +325,27 @@ html.js,
         max-width: 100%;
         padding-left: 5%;
     }
+
+    .bp-header__title {
+	font-size: 180%;
+	font-weight: 700;
+	line-height: 1.3;
+    text-align: center;
+	letter-spacing: 2px;
+	text-transform: none;
+	color: #00ffff;
+    max-width: 90%;
+    float: left;
+}
+
+    .exp{
+    max-height: 100%;
+    max-width: 100%;
+    float: left;
+    padding-left: 3%;
+    font-size: 75%;
+}
+
     .poster {
         max-height: 100%;
         max-width: 100%;
@@ -340,6 +361,7 @@ html.js,
     .capSlides {
         max-height: 100%;
         max-width: 100%;
+        font-size: 75%;
     }
     .mfoot {
         max-width: 100%;
