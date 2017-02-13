@@ -324,23 +324,20 @@ html.js,
     .bp-header {
         max-width: 100%;
     }
-
     .bp-header__title {
-	font-size: 180%;
-        padding-right: 5%;
-}
-
-    .exp{
-    max-height: 100%;
-    max-width: 100%;
+        font-size: 180%;
+        padding-right: 10%;
+    }
+    .exp {
+        max-height: 100%;
+        max-width: 100%;
         width: 90%;
-    font-size: 75%;
+        font-size: 75%;
         padding-left: 3%;
         padding-right: 3%;
         text-align: center;
         position: relative;
-}
-
+    }
     .poster {
         max-height: 100%;
         max-width: 100%;
@@ -357,17 +354,17 @@ html.js,
     }
     .capSlides {
         max-height: 100%;
-        width: 100%;
-        font-size: 75%;
+        max-width: 100%;
         width: 90%;
-padding-left: 3%;
-        padding-right: 3%;
+        font-size: 75%;
+        padding-left: 1%;
+        padding-right: 1%;
         text-align: center;
         position: relative;
     }
     .mfoot {
         max-width: 100%;
         margin-bottom: auto;
-        position: relative;
+        position: static;
     }
 }
